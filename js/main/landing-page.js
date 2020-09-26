@@ -4,25 +4,35 @@ document.querySelector('.contact-form').addEventListener('submit', (e) => {
     const name = document.querySelector('#form-name').value
     const phone = document.querySelector('#form-phone').value
     const email = document.querySelector('#form-email').value
+    const source = 'landing-page-1'
 
     let phoneCheckbox;
     let emailCheckbox;
 
     if (document.getElementById('phone').checked) {
-        phoneCheckbox = true;
+        phoneCheckbox = 'true';
     } else {
-        phoneCheckbox = false
+        phoneCheckbox = 'false'
     }
 
     if (document.getElementById('email').checked) {
-        emailCheckbox = true
+        emailCheckbox = 'true'
     } else {
-        emailCheckbox = false
+        emailCheckbox = 'false'
     }
 
-    const formObj = { name, phone, email, phoneCheckbox, emailCheckbox }
+    const formObj = { name, phone, email, phoneCheckbox, emailCheckbox, source }
 
-    console.log(formObj)
+    fetch('https://vitl-media-form-data.herokuapp.com/landing_pages', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formObj)
+    })
+    .then((res) => res.json())
+    .then((data) => console.log(data))
 
-    // location.replace('../../pages/thank-you-1.html')
+    location.replace('../../pages/thank-you-1.html')
 })
