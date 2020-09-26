@@ -95,3 +95,25 @@ body {
 .checkbox-container label {
     margin-right: 2rem;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .form-container {
+        width: 75%;
+        height: 85%;
+        margin: 7.5vh auto;
+    }
+    .contact-form {
+        padding: 2rem 0;
+    }
+    .checkbox-container input {
+        width: 6%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .form-container {
+        width: 75%;
+        height: 85%;
+        margin: 7.5vh auto;
+    }
+}
