@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/custom/custom.css">
+    <title>Inquiry Form</title>
 </head>
 <body>
-    <h1>hello world</h1>
+    <div class="main-wrapper">
+        <div class="form-container">
+            <!-- <h1>hello world</h1> -->
+            <form class='contact-form'>
+                <p>Enter your info below and choose your method of communication!</p>
+                <input id='form-name' type='text' placeholder="Name">
+                <input id='form-phone' type='text' placeholder="Phone">
+                <input id='form-email' type='text' placeholder="Email">
+                <div class='checkbox-container'>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Phone</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Email</label>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/main/landing-page.js"></script>
 </body>
 </html>
