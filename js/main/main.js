@@ -20,5 +20,5 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
     .then((res) => res.json())
     .then((data) => console.log(data))
 
-    e.target.reset()
+    location.replace('../../pages/thank-you-1.html')
 })
