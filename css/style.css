@@ -740,7 +740,7 @@ a, span {
   .pace.pace-inactive .pace-progress {
     max-width: 100vw; }
 
-#preloader {
+/* #preloader {
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -772,8 +772,8 @@ a, span {
       transition: all 0.7s cubic-bezier(1, 0, 0.55, 1);
       -webkit-transition-delay: 1s;
       -o-transition-delay: 1s;
-      transition-delay: 1s; }
-
+      transition-delay: 1s; } */
+/* 
 .loading-text {
   font-weight: 300;
   text-transform: uppercase;
@@ -795,7 +795,7 @@ a, span {
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     -webkit-transition-delay: .5s;
     -o-transition-delay: .5s;
-    transition-delay: .5s; }
+    transition-delay: .5s; } */
 
 /* ====================== [ End Preloader ] ====================== */
 /* ====================== [ Start Text Animation & Images ] ====================== */
